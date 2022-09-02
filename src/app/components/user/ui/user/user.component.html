@@ -1,0 +1,8 @@
+<section>
+    <div *ngIf="users$ | async as users">
+        <ul user-testid="user" *ngFor="let user of users">
+            <li>{{ user.id }}</li>
+            <li>{{ user.name }}</li>
+        </ul>
+    </div>
+</section>
