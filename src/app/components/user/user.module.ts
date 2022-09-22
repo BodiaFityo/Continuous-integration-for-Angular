@@ -15,7 +15,7 @@ import { UserEffects } from './store/user.effects';
   imports: [
     CommonModule,
     HttpClientModule,
-    EffectsModule.forRoot([UserEffects]),
+    EffectsModule.forFeature([UserEffects]),
     RouterModule.forChild([{
       path: '', component: UserComponent, pathMatch: 'full'
     }]),

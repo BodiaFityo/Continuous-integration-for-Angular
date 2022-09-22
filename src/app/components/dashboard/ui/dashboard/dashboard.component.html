@@ -1,0 +1,4 @@
+<p *ngIf="isLoading$ | async as isLoading">Dashboard Loading... {{ isLoading }}</p>
+<div *ngIf="browsers$ | async as browsers">
+    <app-pie-chart *ngIf="browsers.length > 0" [data]="browsers"></app-pie-chart>
+</div>
